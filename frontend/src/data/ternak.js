@@ -1,0 +1,16 @@
+export const ternak = [
+  { id: 1, kode: 'SPI-001', komoditas: 'Sapi', ras: 'Bali', jumlah: 1, status: 'Sehat' },
+  { id: 2, kode: 'SPI-002', komoditas: 'Sapi', ras: 'Limousin', jumlah: 1, status: 'Terjual' },
+  { id: 3, kode: 'SPI-003', komoditas: 'Sapi', ras: 'Brahman', jumlah: 1, status: 'Sakit' },
+  { id: 4, kode: 'KBG-001', komoditas: 'Kambing', ras: 'Etawa', jumlah: 12, status: 'Sehat' },
+  { id: 5, kode: 'KBG-002', komoditas: 'Kambing', ras: 'Kacang', jumlah: 8, status: 'Sakit' },
+  { id: 6, kode: 'BBI-001', komoditas: 'Babi', ras: 'Landrace', jumlah: 15, status: 'Sehat' },
+  { id: 7, kode: 'BBI-002', komoditas: 'Babi', ras: 'Duroc', jumlah: 10, status: 'Sakit' },
+  { id: 8, kode: 'DMB-001', komoditas: 'Domba', ras: 'Garut', jumlah: 20, status: 'Sehat' },
+  { id: 9, kode: 'DMB-002', komoditas: 'Domba', ras: 'Merino', jumlah: 6, status: 'Terjual' },
+  { id: 10, kode: 'AYM-001', komoditas: 'Ayam', ras: 'Broiler', jumlah: 120, status: 'Sehat' },
+  { id: 11, kode: 'AYM-002', komoditas: 'Ayam', ras: 'Petelur', jumlah: 80, status: 'Sehat' },
+  { id: 12, kode: 'AYM-003', komoditas: 'Ayam', ras: 'Kampung', jumlah: 30, status: 'Terjual' },
+  { id: 13, kode: 'BBK-001', komoditas: 'Bebek', ras: 'Peking', jumlah: 40, status: 'Sehat' },
+  { id: 14, kode: 'BBK-002', komoditas: 'Bebek', ras: 'Mojosari', jumlah: 25, status: 'Sakit' },
+]
