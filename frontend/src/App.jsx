@@ -5,6 +5,10 @@ import Register from './pages/Register'
 import Dashboard from './pages/Dashboard'
 import DaftarTernak from './pages/DaftarTernak'
 import FormTernak from './pages/FormTernak'
+import KesehatanTernak from './pages/KesehatanTernak'
+import Pakan from './pages/Pakan'
+import Keuangan from './pages/Keuangan'
+import Laporan from './pages/Laporan'
 
 export default function App() {
   return (
@@ -16,6 +20,10 @@ export default function App() {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/ternak" element={<DaftarTernak />} />
         <Route path="/ternak/form" element={<FormTernak />} />
+        <Route path="/kesehatan" element={<KesehatanTernak />} />
+        <Route path="/pakan" element={<Pakan />} />
+        <Route path="/keuangan" element={<Keuangan />} />
+        <Route path="/laporan" element={<Laporan />} />
       </Routes>
     </BrowserRouter>
   )

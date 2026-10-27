@@ -4,10 +4,10 @@ import { NavLink, useNavigate } from 'react-router-dom'
 const menu = [
   { to: '/dashboard', ikon: 'dashboard', nama: 'Ternak Saya / Dashboard', pendek: 'Dashboard', aktif: true },
   { to: '/ternak', ikon: 'pets', nama: 'Daftar Ternak', pendek: 'Ternak', aktif: true },
-  { ikon: 'health_and_safety', nama: 'Kesehatan', aktif: false },
-  { ikon: 'grass', nama: 'Pakan', aktif: false },
-  { ikon: 'payments', nama: 'Keuangan', aktif: false },
-  { ikon: 'analytics', nama: 'Laporan', aktif: false },
+  { to: '/kesehatan', ikon: 'health_and_safety', nama: 'Kesehatan', pendek: 'Kesehatan', aktif: true },
+  { to: '/pakan', ikon: 'grass', nama: 'Pakan', pendek: 'Pakan', aktif: true },
+  { to: '/keuangan', ikon: 'payments', nama: 'Keuangan', pendek: 'Keuangan', aktif: true },
+  { to: '/laporan', ikon: 'analytics', nama: 'Laporan', pendek: 'Laporan', aktif: true },
 ]
 
 export default function Sidebar() {
@@ -79,13 +79,13 @@ export default function Sidebar() {
       </aside>
 
       {/* Menu bawah untuk HP */}
-      <nav className="lg:hidden fixed bottom-0 inset-x-0 z-30 bg-white shadow-[0_-2px_12px_rgba(0,0,0,0.08)] flex justify-around items-center px-2 py-1.5">
+      <nav className="lg:hidden fixed bottom-0 inset-x-0 z-30 bg-white shadow-[0_-2px_12px_rgba(0,0,0,0.08)] flex justify-start items-center gap-1 overflow-x-auto px-2 py-1.5">
         {menu.filter(m => m.aktif).map(m => (
           <NavLink
             key={m.to}
             to={m.to}
             className={({ isActive }) =>
-              'flex flex-col items-center gap-0.5 px-5 py-1.5 rounded-xl font-label-sm text-label-sm transition-colors ' +
+              'flex min-w-[60px] shrink-0 flex-col items-center gap-0.5 px-2 py-1.5 rounded-xl font-label-sm text-label-sm transition-colors ' +
               (isActive ? 'bg-primary-container text-on-primary-container' : 'text-on-surface-variant')
             }
           >
@@ -96,7 +96,7 @@ export default function Sidebar() {
         <button
           type="button"
           onClick={() => pindah('/login')}
-          className="flex flex-col items-center gap-0.5 px-5 py-1.5 rounded-xl font-label-sm text-label-sm text-on-surface-variant cursor-pointer"
+          className="flex min-w-[60px] shrink-0 flex-col items-center gap-0.5 px-2 py-1.5 rounded-xl font-label-sm text-label-sm text-on-surface-variant cursor-pointer"
         >
           <span className="material-symbols-outlined text-[24px]">logout</span>
           <span>Keluar</span>
